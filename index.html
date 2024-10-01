@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Menambahkan AOS CSS -->
+    <title>Hasil Bakat | XI PPLG 2</title>
+
+    <style>
+      .hero-section {
+        position: relative;
+        background: url("img/img10.jpeg") no-repeat center center;
+        background-size: cover;
+        color: white;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      /* Overlay to make the background image darker */
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+        z-index: 1; /* Keep it behind the text */
+      }
+
+      /* Text on hero section */
+      .hero-section .container {
+        position: relative;
+        z-index: 2; /* Put text above the overlay */
+      }
+
+      .footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      /* CSS untuk membuat gambar dalam galeri menjadi kotak */
+      .gallery-section img {
+        width: 100%; /* Membuat lebar gambar 100% dari kolom */
+        height: 200px; /* Atur tinggi untuk membuat gambar menjadi kotak */
+        object-fit: cover; /* Memastikan gambar tetap proporsional dan tidak terdistorsi */
+      }
+
+      .contact-section .form-control {
+        border-radius: 0.5rem;
+      }
+
+      .contact-section .btn {
+        border-radius: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar mulai -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/icon.png" alt="Logo" width="30" height="34" class="d-inline-block align-text-top" />
+        </a>
+        <a class="navbar-brand" href="#">XI PPLG 2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galeri Bakat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar selesai -->
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container">
+        <h1 class="display-4" data-aos="fade-up">Temukan Bakat Terbaik di Sini</h1>
+        <p class="lead" data-aos="fade-up" data-aos-delay="200">Kami menghadirkan hasil karya terbaik dari berbagai bidang bakat</p>
+        <a href="#" class="btn btn-warning btn-lg" data-aos="fade-up" data-aos-delay="400">Lihat Galeri</a>
+      </div>
+    </section>
+
+    <!-- Feature Section -->
+    <section class="feature-section text-center my-5">
+      <div class="container">
+        <h2 class="mb-5" data-aos="fade-up">Apa saja bakat yang kami tampilkan?</h2>
+        <div class="row">
+          <div class="col-md-4 my-sm-3" data-aos="fade-right">
+            <div class="card p-4">
+              <div class="card-body">
+                <h5 class="card-title">Menyanyi</h5>
+                <p class="card-text">Menampilkan bakat vokal terbaik dari para penyanyi berbakat di sekolah kami.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-sm-3" data-aos="fade-up">
+            <div class="card p-4">
+              <div class="card-body">
+                <h5 class="card-title">Menggambar</h5>
+                <p class="card-text">Karya seni yang memukau dari siswa-siswi berbakat dalam bidang menggambar.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 my-sm-3" data-aos="fade-left">
+            <div class="card p-4">
+              <div class="card-body">
+                <h5 class="card-title">Memasak</h5>
+                <p class="card-text">Sajian kuliner hasil karya siswa-siswi yang berbakat dalam bidang memasak.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section my-5">
+      <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">Galeri Bakat</h2>
+        <div class="row">
+          <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="img/img1.jpeg" class="img-fluid mb-4" alt="Bakat 1" />
+          </div>
+          <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+            <img src="img/img3.jpeg" class="img-fluid mb-4" alt="Bakat 2" />
+          </div>
+          <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+            <img src="img/img6.jpeg" class="img-fluid mb-4" alt="Bakat 3" />
+          </div>
+          <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+            <img src="img/img5.jpeg" class="img-fluid mb-4" alt="Bakat 4" />
+          </div>
+          <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500">
+            <img src="img/img2.jpeg" class="img-fluid mb-4" alt="Bakat 5" />
+          </div>
+          <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="600">
+            <img src="img/img9.jpeg" class="img-fluid mb-4" alt="Bakat 6" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section my-5">
+      <div class="container">
+        <h2 class="text-center mb-4" data-aos="fade-up">Kontak Kami</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6" data-aos="fade-up">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan nama Anda" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Masukkan email Anda" required />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Masukkan pesan Anda" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="m-0">&copy; 2024 XI PPLG 2. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-Ksv/0xPmc/eT8U2UO7eq56l1G/8QFIH5FO4/bF5tF7U8l/T5s5MN8WVQ97fS8B4z" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-4sSBchOgya55syBlgkPwtomTxh3Ibcc1M1F4I7Bz+GpX8DiwwFw0eFOSG6B5FlP6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800, // Durasi animasi
+      });
+    </script>
+  </body>
+</html>
