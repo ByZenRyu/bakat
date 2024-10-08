@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <title>Galeri Bakat | XI PPLG 2</title>
+    <style>
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .gallery-section {
+            padding: 50px 0;
+        }
+        .gallery-item {
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.2s;
+            height: 300px;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+        .gallery-img {
+            width: 100%;
+            height: 200px; /* Mengatur tinggi gambar */
+            object-fit: cover;
+        }
+        .bg-dark-custom {
+            background-color: #000; /* Warna hitam untuk latar belakang */
+            padding: 20px 0; /* Memberikan jarak atas dan bawah pada elemen */
+        }
+        .mb-4-custom {
+            margin-bottom: 20px; /* Jarak antar elemen */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">XI PPLG 2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Galeri Bakat</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Gallery Section -->
+<section class="gallery-section">
+    <div class="container-fluid">
+        <h2 class="text-center mb-4" data-aos="fade-up">Galeri Bakat</h2>
+
+        <!-- Kategori Grup Vokal -->
+        <div style="margin-bottom: 70px;" id="vokal" >
+            <h3 class="text-center p-5 mb-4" data-aos="fade-up">Kategori Grup Vokal</h3>
+            <div class="row">
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="img/dfy.jpg" alt="Peserta 1" class="gallery-img">
+                        <div class="p-3">
+                            <h5 class="text-center">Dendi, Fajar, Yuli</h5>
+                            <p class="text-center">Peserta Grup Vokal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="img/ci.jpg" alt="Peserta 2" class="gallery-img">
+                        <div class="p-3">
+                            <h5 class="text-center">Cahyani, Intan</h5>
+                            <p class="text-center">Peserta Grup Vokal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="img/nhv.jpg" alt="Peserta 3" class="gallery-img">
+                        <div class="p-3">
+                            <h5 class="text-center">Nayla, Hindun, Vina</h5>
+                            <p class="text-center">Peserta Grup Vokal</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="img/dg.jpg" alt="Peserta 4" class="gallery-img">
+                        <div class="p-3">
+                            <h5 class="text-center">Delvira, Gina</h5>
+                            <p class="text-center">Peserta Grup Vokal</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kategori Menggambar -->
+        <div style="margin-bottom: 80px;" class=" mb-4" id="menggambar">
+            <h3 class="text-center p-5 mb-4 "  data-aos="fade-up">Kategori Menggambar</h3>
+            <div class="row">
+                <div class="col-md-4 mb-4-custom" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="img/mugni.jpg" alt="Peserta 1" class="gallery-img">
+                        <div class="p-3">
+                            <h5 class="text-center">Mughni</h5>
+                            <p class="text-center">Peserta Lomba Menggambar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4-custom" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="img/laras.jpg" alt="Peserta 2" class="gallery-img">
+                        <div class="p-3">
+                            <h5 class="text-center">Larasati</h5>
+                            <p class="text-center">Peserta Lomba Menggambar</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4-custom" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="img/masha.jpg" alt="Peserta 3" class="gallery-img">
+                        <div class="p-3">
+                            <h5 class="text-center">Marsha</h5>
+                            <p class="text-center">Peserta Lomba Menggambar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kategori Memasak -->
+        <div style="margin-bottom: 80px;" class="mb-4" id="memasak">
+            <h3 class="text-center  p-5 mb-4 "  data-aos="fade-up">Kategori Memasak</h3>
+            <div class="row">
+                <div class="col-md-6 mb-4" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="img/dini.jpg" alt="Peserta 1" class="gallery-img">
+                        <div class="p-3">
+                            <h5 class="text-center">Dini</h5>
+                            <p class="text-center">Peserta Lomba Memasak</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4" data-aos="fade-up">
+                    <div class="gallery-item">
+                        <img src="img/anggi.jpg" alt="Peserta 2" class="gallery-img">
+                        <div class="p-3">
+                            <h5 class="text-center">Anggi</h5>
+                            <p class="text-center">Peserta Lomba Memasak</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p class="m-0">&copy; 2024 XI PPLG 2. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
