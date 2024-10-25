@@ -11,6 +11,9 @@
             border-radius: 5px;
             overflow: hidden;
             transition: transform 0.2s;
+            display: flex;
+            flex-direction: column;
+            height: 100%; /* Ensure cards are the same height */
         }
         .product-card:hover {
             transform: scale(1.05);
@@ -19,6 +22,12 @@
             width: 100%;
             height: 200px; /* Set image height */
             object-fit: cover;
+        }
+        .product-content {
+            flex-grow: 1; /* Allow the content to take up remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .footer {
             background-color: #333;
@@ -53,42 +62,58 @@
     <div class="container">
         <h2 class="text-center mb-4">Produk</h2>
         <div class="row">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-3 mb-4">
                 <div class="product-card">
                     <img src="img/nadia.jpg" alt="Nugget Sosis & Ayam" class="product-img">
-                    <div class="p-3">
+                    <div class="p-3 product-content">
                         <h5 class="text-center">Nugget Sosis & Ayam</h5>
                         <p class="text-center">Nikmati lezatnya Nugget Sosis & Ayam dari Nadia, perpaduan sempurna antara sosis dan ayam yang pasti menggugah selera.</p>
+                        <p class="text-center"><strong>Pemilik Produk:</strong> Nadia</p>
                         <div class="text-center">
                             <a href="https://wa.me/6281312177818?text=Hallo%20apakah%20masih%20ada%20Nugget%20Sosis%20%26%20Ayam?" class="btn btn-primary" target="_blank">Beli Sekarang</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-3 mb-4">
                 <div class="product-card">
                     <img src="img/wulan.jpeg" alt="Nugget Ayam" class="product-img">
-                    <div class="p-3">
+                    <div class="p-3 product-content">
                         <h5 class="text-center">Nugget Ayam</h5>
                         <p class="text-center">Cicipi kelezatan Nugget Ayam dari Wulan, yang crispy di luar dan juicy di dalam, pilihan tepat untuk segala suasana.</p>
+                        <p class="text-center"><strong>Pemilik Produk:</strong> Wulan</p>
                         <div class="text-center">
                             <a href="https://wa.me/6285759118421?text=Hallo%20apakah%20masih%20ada%20Nugget%20Ayam?" class="btn btn-primary" target="_blank">Beli Sekarang</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-4">
+            <div class="col-md-3 mb-4">
                 <div class="product-card">
                     <img src="img/intan.jpg" alt="Mochi Aneka Rasa" class="product-img">
-                    <div class="p-3">
+                    <div class="p-3 product-content">
                         <h5 class="text-center">Mochi Aneka Rasa</h5>
                         <p class="text-center">Nikmati kenikmatan Mochi Aneka Rasa dari Intan, lembut dan kenyal, dengan berbagai pilihan rasa yang menggoda selera.</p>
+                        <p class="text-center"><strong>Pemilik Produk:</strong> Intan</p>
                         <div class="text-center">
-                            <a href="https://wa.me/6287827716161?text=Hallo%20apakah%20masih%20ada%20Mochi%20Aneka%20Rasa?" class="btn btn-primary" target="_blank">Beli Sekarang</a>
+                            <a href="https://wa.me/087827716161?text=Hallo%20apakah%20masih%20ada%20Mochi%20Aneka%20Rasa?" class="btn btn-primary" target="_blank">Beli Sekarang</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="col-md-3 mb-4">
+                <div class="product-card">
+                    <img src="img/fajar.jpg" alt="Spaghetti Katsu" class="product-img">
+                    <div class="p-3 product-content">
+                        <h5 class="text-center">Spaghetti Katsu</h5>
+                        <p class="text-center">Rasakan sensasi unik dari Spaghetti Katsu dari Faja, perpaduan pasta yang lembut dengan lapisan katsu yang renyah. Nikmati cita rasa yang menggugah selera dan sempurna untuk setiap momen.</p>
+                        <p class="text-center"><strong>Pemilik Produk:</strong> Fajar</p>
+                        <div class="text-center">
+                            <a href="https://wa.me/089510659363?text=Hallo%20apakah%20masih%20ada%20Spaghetti%20Katsu?" class="btn btn-primary" target="_blank">Beli Sekarang</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </div>
     </div>
 </section>
